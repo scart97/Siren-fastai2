@@ -39,3 +39,14 @@ Each notebook represents one experiment.
 
 Files used to train were the first ones that I could find on my machine. The audio is part of the LAPSBM dataset https://gitlab.com/fb-audio-corpora/lapsbm16k while the image is part of The Oxford-IIIT Pet Dataset https://www.robots.ox.ac.uk/~vgg/data/pets/
 
+## Interesting links
+
+* Twitter discussion about the model from the author [here](https://twitter.com/vincesitzmann/status/1273409377395859456)
+
+* Reddit discussion about original paper [here](https://www.reddit.com/r/MachineLearning/comments/hbo98a/r_siren_implicit_neural_representations_with/)
+
+* Reddit discussion about what makes a related paper work (nerf) that may give some intuition about how Siren works [here](https://www.reddit.com/r/MachineLearning/comments/hc5q3g/r_fourier_features_let_networks_learn_high/)
+
+* Youtube video explaining the paper [here](https://www.youtube.com/watch?v=Q5g3p9Zwjrk)
+
+* There are other implementations of Siren on github using either another framework (tensorflow) or trying different experiments.
