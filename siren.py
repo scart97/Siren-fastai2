@@ -6,6 +6,11 @@ import math
 
 
 def siren_init(tensor, use_this_fan_in=None):
+    """
+        Siren initalization of a tensor. To initialize a nn.Module use 'apply_siren_init'. 
+        It's equivalent to torch.nn.init.kaiming_uniform_ with mode = 'fan_in'
+        and the same gain as the 'ReLU' nonlinearity
+    """
     if use_this_fan_in is not None:
         fan_in = use_this_fan_in
     else:
@@ -16,6 +21,9 @@ def siren_init(tensor, use_this_fan_in=None):
 
 
 def apply_siren_init(layer: nn.Module):
+    """
+        Applies siren initialization to a layer
+    """
     siren_init(layer.weight)
     if layer.bias is not None:
         fan_in = nn.init._calculate_correct_fan(layer.weight, "fan_in")
@@ -54,6 +62,9 @@ def siren_layer(in_features, out_features, bias=True, w0=1):
 
 
 def siren_model(dimensions: List[int]):
+    """
+        Siren model as presented in the paper. It's a sequence of linear layers followed by the Siren activation
+    """
     first_layer = siren_layer(dimensions[0], dimensions[1], w0=30)
     other_layers = []
     for dim0, dim1 in zip(dimensions[1:-1], dimensions[2:]):
