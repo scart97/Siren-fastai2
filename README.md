@@ -4,7 +4,9 @@ Unofficial implementation of 'Implicit Neural Representations with Periodic Acti
 
 
 Video: https://www.youtube.com/watch?v=Q2fLWGBeaiI
+
 Original project page: https://vsitzmann.github.io/siren/
+
 Paper: https://arxiv.org/abs/2006.09661
 
 Only the image and audio fitting experiments from the paper were reproduced here.
