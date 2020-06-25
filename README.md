@@ -22,7 +22,7 @@ Adittionally, an extra experiment for image classification is also available (im
 So, to make it easier to compose the activation with different layers I opted for refactoring so that a Siren activation computes:
 `Siren(x) = sin(W0 * x)`, making the usage similar to other activations.
 
-
+* Siren is the model, not the activation. Sorry about the nomeclature confusion here, I had no better idea how to call this scaled sine activation when starting the project.
 
 ## How to run
 
