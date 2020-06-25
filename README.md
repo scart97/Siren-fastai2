@@ -9,6 +9,8 @@ Original project page: https://vsitzmann.github.io/siren/
 
 Paper: https://arxiv.org/abs/2006.09661
 
+Official implementation: https://github.com/vsitzmann/siren
+
 Only the image and audio fitting experiments from the paper were reproduced here.
 Adittionally, an extra experiment for image classification is also available (imagenette notebook).
 
